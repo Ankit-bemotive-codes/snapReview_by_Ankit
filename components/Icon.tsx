@@ -2,7 +2,7 @@ import React from 'react';
 
 export type IconName = 
   | 'Sparkles' | 'Film' | 'Sun' | 'Snow' | 'Beach' | 'Tree' | 'Cube' | 'Camera' 
-  | 'Image' | 'Upload' | 'Wand' | 'Mic' | 'Clock';
+  | 'Image' | 'Upload' | 'Wand' | 'Mic' | 'Clock' | 'Frame';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
   name: IconName;
@@ -38,6 +38,8 @@ export const Icon: React.FC<IconProps> = ({ name, ...props }) => {
         return <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}><path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m12 0v-1.5a6 6 0 0 0-12 0v1.5m0 0a6 6 0 0 0 6 6m-6-6a6 6 0 0 1 6-6" /></svg>
     case 'Clock':
         return <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+    case 'Frame':
+        return <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15m11.25-6L15 9m6.25 0h-4.5m4.5 0v4.5m0-4.5L15 15" /></svg>
     default:
       return <svg />;
   }
