@@ -1,0 +1,7 @@
+{
+  "name": "SnapRevise",
+  "description": "An AI-powered image editing app that allows users to upload or generate an image and then revise it using natural language feedback, preset edits, or voice commands. Features include a before-and-after view and a revision history.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
